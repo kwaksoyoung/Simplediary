@@ -6,13 +6,29 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
+
 
 public class MainActivity extends Activity {
 
+    ListView mschedulelistView;
+    schedulelistAdapter mscheduleListAdapter;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mschedulelistView = (ListView)findViewById(R.id.scheduleList);
+        mscheduleListAdapter = new schedulelistAdapter(this);
+        mschedulelistView.setAdapter(mscheduleListAdapter);
+        mschedulelistView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
+                viewMemo(position);
+            }
+        });
+
     }
 
     @Override
@@ -36,6 +52,11 @@ public class MainActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+    private void viewMemo(int position) {
+    }
+
 
     public void onaddClicked(View v)
     {

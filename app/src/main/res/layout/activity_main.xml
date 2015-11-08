@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,6 +10,7 @@
     android:background="#ffffffff">
 
     <RelativeLayout
+        android:id="@+id/dateLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffffff"
@@ -45,80 +46,13 @@
             android:layout_alignParentRight="true"
             android:onClick="onaddClicked" />
     </RelativeLayout>
-    <RelativeLayout
+    <ListView
+        android:id="@+id/scheduleList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#ffffffff">
-
-        <Button
-            android:id="@+id/sun"
-            android:layout_width="46dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="일"
-            android:layout_alignParentLeft="true">
-        </Button>
-
-        <Button
-            android:id="@+id/mon"
-            android:layout_width="46dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:layout_below="@+id/sun"
-            android:text="월"
-            android:layout_alignParentLeft="true">
-        </Button>
-        <Button
-            android:id="@+id/tue"
-            android:layout_width="46dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/mon"
-            android:gravity="center_horizontal"
-            android:text="화"
-            android:layout_alignParentLeft="true">
-        </Button>
-
-        <Button
-            android:id="@+id/wen"
-            android:layout_width="46dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tue"
-            android:gravity="center_horizontal"
-            android:text="수"
-            android:layout_alignParentLeft="true">
-        </Button>
-
-        <Button
-            android:id="@+id/thu"
-            android:layout_width="46dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/wen"
-            android:gravity="center_horizontal"
-            android:text="목"
-            android:layout_alignParentLeft="true">
-        </Button>
-
-        <Button
-            android:id="@+id/fri"
-            android:layout_width="46dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/thu"
-            android:gravity="center_horizontal"
-            android:text="금"
-            android:layout_alignParentLeft="true">
-        </Button>
-
-        <Button
-            android:id="@+id/sat"
-            android:layout_width="46dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/fri"
-            android:gravity="center_horizontal"
-            android:text="토"
-            android:layout_alignParentLeft="true">
-        </Button>
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dateLayout"
+        >
+    </ListView>
 
 
-    </RelativeLayout>
-
-</LinearLayout>
+</RelativeLayout>
