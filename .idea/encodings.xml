@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/androidtown/simplediary/CalendarMonthAdapter.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/androidtown/simplediary/CalendarMonthView.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/androidtown/simplediary/DailyActivity.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/androidtown/simplediary/MonthItem.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/androidtown/simplediary/MonthItemView.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/androidtown/simplediary/MonthlyMainActivity.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/androidtown/simplediary/OnDataSelectionListener.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_add.xml" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_daily.xml" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_monthly.xml" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_schedulelistitem.xml" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/listview_item.xml" charset="x-windows-949" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
